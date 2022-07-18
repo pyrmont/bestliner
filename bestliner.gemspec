@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.homepage      = "https://github.com/pyrmont/bestliner"
   s.files         = `git ls-files`.strip.split(/\s+/).reject {|f| f.match(%r{^test/}) }
   s.require_paths = ["lib"]
+  s.extensions    = ["ext/bestliner/extconf.rb"]
   s.license       = "BSD-2"
 
   s.add_development_dependency "rake-compiler"
